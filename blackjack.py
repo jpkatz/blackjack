@@ -4,8 +4,7 @@ import random
 class Deck:
     
     def __init__(self):
-        #cardNumber = 'A23456789TJQK' #All the numbers
-        cardNumber = 'ATJQK'
+        cardNumber = 'A23456789TJQK' #All the numbers
         cardSuit = 'HDSC' #All the suits
         self.deck = {i+j for i in cardNumber for j in cardSuit} #get combinations
         
