@@ -162,7 +162,8 @@ def plotResults(cardVisible,cardNumber,percentages):
     plt.yticks([i for i in range(1,22)],yticks)
     plt.xlabel('Dealer Card')
     plt.ylabel('Card to Stop')
-    plt.colorbar()
+    cbar = plt.colorbar() 
+    cbar.set_label('Percent Chance to Win',size=18)
     plt.show
 
                 
